@@ -1,7 +1,7 @@
 # MSERを利用した文字領域検出
 MSERを利用して文字領域を検出し, テキストを出力する.
 
-<img src="https://user-images.githubusercontent.com/39133269/43440394-11186656-94d2-11e8-8b7c-82d0f4530cd3.png" width=50%>
+<img src="https://user-images.githubusercontent.com/39133269/43440942-1d244814-94d4-11e8-94c1-a3cbea4897ce.png" width=50%>
 <img src="https://user-images.githubusercontent.com/39133269/43440408-1c668f06-94d2-11e8-964f-7dea9214cfae.png" width=50%>
 
 
