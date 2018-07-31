@@ -87,3 +87,4 @@ DやPなどのようなアルファベットについては空洞が文字とし
 
 [Python3系でtesseractを使ってOCRをやってみる](http://teru0rc4.hatenablog.com/entry/2017/08/09/230046)（OCRの環境構築）
 
+
