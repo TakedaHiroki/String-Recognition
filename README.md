@@ -1,9 +1,9 @@
 # MSERを利用した文字領域検出
 MSERを利用して文字領域を検出し, テキストを出力する.
 
-
-![tyo](https://user-images.githubusercontent.com/39133269/43440406-1796e002-94d2-11e8-8996-ca4f4c944092.png)
-
+|---|---|
+<img src="https://user-images.githubusercontent.com/39133269/43440406-1796e002-94d2-11e8-8996-ca4f4c944092.png" width=50%>
+|
 ![resu](https://user-images.githubusercontent.com/39133269/43440408-1c668f06-94d2-11e8-964f-7dea9214cfae.png)
 
 
