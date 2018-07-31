@@ -63,14 +63,14 @@ moji_sort = sorted(moji, key=lambda x: x[1])
 
 ```python
 for i in range(len(string)):
-        if len(string[i]) < 30:
-            continue
-        string_sort = sorted(string[i], key=lambda x: x[0])
-        string_sort = np.array(string_sort)
-        im = img[string_sort.min(axis=0)[1]-2:string_sort.min(axis=0)[1]+(string_sort.min(axis=0)[1]+string_sort.max(axis=0)[3]-string_sort.min(axis=0)[1]), string_sort.min(axis=0)[0]-2:string_sort.min(axis=0)[0]+(string_sort.max(axis=0)[0]-string_sort.min(axis=0)[0]+string_sort.max(axis=0)[2])]
-        cv2.imwrite("result"+str(num)+".png", im)
-        txt = tool.image_to_string(Image.open('result'+str(num)+'.png'), lang="eng", builder=pyocr.builders.TextBuilder(tesseract_layout=6))
-        print(txt)
+    if len(string[i]) < 30:
+        continue
+    string_sort = sorted(string[i], key=lambda x: x[0])
+    string_sort = np.array(string_sort)
+    im = img[string_sort.min(axis=0)[1]-2:string_sort.min(axis=0)[1]+(string_sort.min(axis=0)[1]+string_sort.max(axis=0)[3]-string_sort.min(axis=0)[1]), string_sort.min(axis=0)[0]-2:string_sort.min(axis=0)[0]+(string_sort.max(axis=0)[0]-string_sort.min(axis=0)[0]+string_sort.max(axis=0)[2])]
+    cv2.imwrite("result"+str(num)+".png", im)
+    txt = tool.image_to_string(Image.open('result'+str(num)+'.png'), lang="eng", builder=pyocr.builders.TextBuilder(tesseract_layout=6))
+    print(txt)
 ```
 
 ## 結果
@@ -80,5 +80,7 @@ DやPなどのようなアルファベットについては空洞が文字とし
 
 ## 参考文献
 
-[機械学習のデータセット画像枚数を増やす方法](https://qiita.com/bohemian916/items/9630661cd5292240f8c7)（LUTの使い方を参考）
+[自然なイメージ内にあるテキストの自動検出と自動認識](https://jp.mathworks.com/help/vision/examples/automatically-detect-and-recognize-text-in-natural-images.html)（MSERを使った処理参照）
+[MSER openCV not working #10554](https://github.com/opencv/opencv/issues/10554)（mser.detectRegionsの引数を参照）
+[Python3系でtesseractを使ってOCRをやってみる](http://teru0rc4.hatenablog.com/entry/2017/08/09/230046)（OCRの環境構築）
 
