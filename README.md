@@ -86,4 +86,3 @@ DやPなどのようなアルファベットについては空洞が文字とし
 [MSER openCV not working #10554](https://github.com/opencv/opencv/issues/10554)（mser.detectRegionsの引数を参照）
 
 [Python3系でtesseractを使ってOCRをやってみる](http://teru0rc4.hatenablog.com/entry/2017/08/09/230046)（OCRの環境構築）
-
